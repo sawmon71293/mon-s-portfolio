@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680">
+<defs></defs>
+
+<g stroke="#60351e" stroke-width="8" stroke-linejoin="round">
+ <path d="M110 610 L125 150 M420 610 L430 260 M760 610 L755 105" fill="none"/>
+ <path d="M55 160 Q55 140 78 136 L320 136 Q340 140 337 160 L325 215 Q320 230 300 230 L75 225 Q55 220 55 200Z" fill="#c77d38"/>
+ <path d="M330 270 Q330 250 352 246 L600 246 Q620 250 617 270 L605 325 Q600 340 580 340 L350 335 Q330 330 330 310Z" fill="#d69a4e"/>
+ <path d="M650 115 Q650 95 672 91 L930 91 Q950 95 947 115 L935 170 Q930 185 910 185 L670 180 Q650 175 650 155Z" fill="#b36b34"/>
+</g>
+<g font-family="Georgia,serif" font-size="24" fill="#422b20" text-anchor="middle">
+ <text x="195" y="178">LOAN ORIGINATION</text><text x="474" y="288">HR ADMIN PORTAL</text><text x="798" y="130">FINANCIAL INTEGRATION</text>
+</g>
+
+</svg>

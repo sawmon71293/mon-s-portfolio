@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+<defs></defs>
+
+<g stroke="#61351f" stroke-width="7">
+ <rect x="35" y="300" width="730" height="34" rx="8" fill="#8d5129"/>
+ <rect x="55" y="335" width="25" height="200" fill="#70401f"/>
+ <rect x="720" y="335" width="25" height="200" fill="#70401f"/>
+ <rect x="80" y="220" width="130" height="80" rx="14" fill="#6e5678"/>
+ <rect x="230" y="220" width="130" height="80" rx="14" fill="#6f6680"/>
+ <rect x="380" y="220" width="130" height="80" rx="14" fill="#5d8b9b"/>
+ <rect x="530" y="220" width="130" height="80" rx="14" fill="#8a9c4d"/>
+</g>
+<g font-family="Arial" font-weight="bold" fill="#fff" text-anchor="middle">
+ <text x="145" y="270" font-size="34">C#</text><text x="295" y="268" font-size="25">.NET</text>
+ <text x="445" y="270" font-size="34">TS</text><text x="595" y="268" font-size="25">SQL</text>
+</g>
+<g fill="#a86132"><rect x="100" y="120" width="38" height="100"/><rect x="145" y="140" width="38" height="80"/><rect x="190" y="105" width="38" height="115"/></g>
+
+</svg>

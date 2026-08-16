@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs></defs>
+
+<path d="M0 430 Q160 330 340 430 Q510 345 700 430 Q880 340 1200 430 L1200 800 L0 800Z" fill="url(#earth)"/>
+<g fill="#536d35">
+ <path d="M20 470 Q30 310 70 265 Q105 340 95 470Z"/><path d="M1050 480 Q1060 310 1100 260 Q1135 350 1120 480Z"/>
+ <path d="M1130 470 Q1140 330 1180 295 Q1210 370 1200 480Z"/>
+</g>
+<g fill="#9c6435">
+ <ellipse cx="140" cy="610" rx="48" ry="25"/><ellipse cx="310" cy="690" rx="36" ry="18"/>
+ <ellipse cx="920" cy="650" rx="45" ry="21"/><ellipse cx="1080" cy="720" rx="32" ry="16"/>
+</g>
+<g fill="#d68d49">
+ <circle cx="80" cy="590" r="10"/><circle cx="210" cy="720" r="8"/><circle cx="1030" cy="590" r="9"/>
+</g>
+<g stroke="#8b572b" stroke-width="5">
+ <path d="M70 545 Q110 490 150 545"/><path d="M980 550 Q1020 490 1060 550"/>
+</g>
+
+</svg>

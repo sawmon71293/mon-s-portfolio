@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 800 650">
+<defs>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#fff2cf"/><stop offset=".52" stop-color="#f5dca8"/><stop offset="1" stop-color="#e8c486"/>
+</linearGradient>
+<linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#8a451f"/><stop offset="1" stop-color="#4c281b"/>
+</linearGradient>
+<linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#738a3d"/><stop offset="1" stop-color="#344c2c"/>
+</linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#b86b31"/><stop offset="1" stop-color="#6d321b"/>
+</linearGradient>
+<filter id="grain">
+  <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3"/>
+  <feColorMatrix values="1 0 0 0 .55 0 1 0 0 .34 0 0 1 0 .18 0 0 0 .12 0"/>
+</filter>
+</defs>
+
+<rect x="85" y="55" width="630" height="500" rx="42" fill="#6f301b" stroke="#4a2418" stroke-width="15"/>
+<path d="M120 75 Q170 45 235 62 L680 80 Q700 82 702 110 L682 510 Q680 540 650 542 L145 525 Q112 520 110 490Z" fill="url(#paper)" stroke="#9c5b2c" stroke-width="8"/>
+<path d="M125 100 Q155 75 195 82 L205 505 Q165 510 128 490Z" fill="#9c4d26" opacity=".8"/>
+<path d="M150 120 Q180 100 210 110" fill="none" stroke="#d18b45" stroke-width="5"/>
+<g fill="#5b813e"><ellipse cx="170" cy="350" rx="18" ry="42" transform="rotate(-35 170 350)"/><ellipse cx="205" cy="315" rx="16" ry="38" transform="rotate(30 205 315)"/></g>
+<path d="M175 365 Q185 335 210 300" fill="none" stroke="#56753a" stroke-width="6"/>
+
+</svg>

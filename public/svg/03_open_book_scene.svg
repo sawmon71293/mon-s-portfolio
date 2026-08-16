@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#fff2cf"/><stop offset=".52" stop-color="#f5dca8"/><stop offset="1" stop-color="#e8c486"/>
+</linearGradient>
+<linearGradient id="earth" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#8a451f"/><stop offset="1" stop-color="#4c281b"/>
+</linearGradient>
+<linearGradient id="grass" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#738a3d"/><stop offset="1" stop-color="#344c2c"/>
+</linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#b86b31"/><stop offset="1" stop-color="#6d321b"/>
+</linearGradient>
+<filter id="grain">
+  <feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3"/>
+  <feColorMatrix values="1 0 0 0 .55 0 1 0 0 .34 0 0 1 0 .18 0 0 0 .12 0"/>
+</filter>
+</defs>
+
+<rect width="1400" height="900" fill="#153947"/>
+<path d="M55 125 Q80 75 145 72 L660 88 Q700 95 700 135 L700 800 Q680 830 640 825 L115 810 Q55 800 55 750Z" fill="url(#paper)" stroke="#68351e" stroke-width="18"/>
+<path d="M1345 125 Q1320 75 1255 72 L740 88 Q700 95 700 135 L700 800 Q720 830 760 825 L1285 810 Q1345 800 1345 750Z" fill="url(#paper)" stroke="#68351e" stroke-width="18"/>
+<path d="M700 100 Q680 260 693 445 Q680 640 700 805 Q720 640 707 445 Q720 260 700 100Z" fill="#8b4c27" opacity=".3"/>
+<path d="M80 150 Q105 120 150 118 M1320 150 Q1295 120 1250 118" fill="none" stroke="#d39a58" stroke-width="6"/>
+<rect x="55" y="72" width="45" height="690" rx="18" fill="#71341d"/>
+<rect x="1300" y="72" width="45" height="690" rx="18" fill="#71341d"/>
+
+</svg>

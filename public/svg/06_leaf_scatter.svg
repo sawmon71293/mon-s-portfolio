@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="260" viewBox="0 0 520 260">
+<defs></defs>
+
+<g stroke="#526b35" stroke-width="4">
+ <path d="M80 180 Q30 130 80 70 Q140 110 80 180Z" fill="#a3a94f"/>
+ <path d="M160 120 Q120 65 180 25 Q220 75 160 120Z" fill="#6f9146"/>
+ <path d="M260 210 Q215 160 270 115 Q315 160 260 210Z" fill="#c19a45"/>
+ <path d="M350 100 Q310 50 365 20 Q410 65 350 100Z" fill="#8c9f4a"/>
+ <path d="M440 190 Q395 145 450 100 Q495 150 440 190Z" fill="#ba7540"/>
+</g>
+
+</svg>

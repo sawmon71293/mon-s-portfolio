@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<defs></defs>
+
+<path d="M70 700 Q160 590 300 630 Q430 665 490 520 Q540 400 690 445 Q820 485 880 330 Q940 205 1110 240" fill="none" stroke="#d79b58" stroke-width="90" stroke-linecap="round"/>
+<path d="M70 700 Q160 590 300 630 Q430 665 490 520 Q540 400 690 445 Q820 485 880 330 Q940 205 1110 240" fill="none" stroke="#f0c879" stroke-width="68" stroke-linecap="round"/>
+<g fill="#9a5b2d" stroke="#63391f" stroke-width="5">
+ <path d="M100 620 H235 Q250 620 250 635 V690 H90 V635Q90 620 100 620Z"/>
+ <path d="M380 540 H520 Q535 540 535 555 V610 H370 V555Q370 540 380 540Z"/>
+ <path d="M690 385 H835 Q850 385 850 400 V455 H680 V400Q680 385 690 385Z"/>
+ <path d="M950 220 H1110 Q1125 220 1125 235 V290 H940 V235Q940 220 950 220Z"/>
+</g>
+<g font-family="Georgia,serif" font-size="20" fill="#fff3cf" text-anchor="middle">
+ <text x="170" y="657">Started Coding</text><text x="452" y="578">Financial Systems</text>
+ <text x="765" y="423">Loan Origination</text><text x="1032" y="258">Today</text>
+</g>
+
+</svg>
