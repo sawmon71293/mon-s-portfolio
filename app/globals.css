@@ -193,9 +193,21 @@ a {
   padding: 58px 70px 70px 65px;
 }
 
+@media (max-width:768px) {
+  .left-page {
+    padding: 20px
+  }
+}
+
 .right-page {
   border-radius: 0 18px 18px 0;
   padding: 58px 65px 70px 70px;
+}
+
+@media (min-width:400px) {
+  .right-page {
+    padding: 20px
+  }
 }
 
 .book-spine {
@@ -343,6 +355,10 @@ a {
   width: 72px;
   flex-direction: column;
   gap: 3px;
+
+  @media (min-width: 768px) {
+    right: -26px;
+  }
 }
 
 .chapter-tab {
@@ -362,20 +378,52 @@ a {
 }
 
 .chapter-tab.orange {
-  background: #c96d25
+  background: #c96d25;
 }
 
 .chapter-tab.green {
-  background: #80964a
+  background: #80964a;
 }
 
 .chapter-tab.blue {
-  background: #58879a
+  background: #58879a;
 }
 
 .chapter-tab b {
   display: block;
-  font-size: 12px
+  font-size: 12px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+
+  .chapter-tabs {
+    right: -18px;
+    top: 45px;
+    width: 45px;
+    gap: 2px;
+  }
+
+  .chapter-tab {
+    width: 45px;
+    min-height: 38px;
+
+    padding: 5px 2px;
+
+    border-width: 1px;
+    border-radius: 0 8px 8px 0;
+
+    font-size: 0;
+  }
+
+  .chapter-tab b {
+    font-size: 10px;
+    line-height: 1;
+  }
 }
 
 .page-arrow {
@@ -719,9 +767,6 @@ a {
     border-top: 7px solid #70401f
   }
 
-  .chapter-tabs {
-    right: -55px
-  }
 }
 
 .hero {
@@ -748,10 +793,8 @@ a {
 .hero-background {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
 
   z-index: 0;
@@ -893,14 +936,10 @@ a {
 /* Mushrooms in foreground */
 .developer-mushrooms {
   position: absolute;
-
   left: -20px;
   bottom: 0;
-
   width: 220px;
-
   z-index: 13;
-
   opacity: .9;
 }
 
@@ -973,36 +1012,61 @@ a {
   }
 }
 
-
-/* =========================================================
-   RIGHT SIDE — DIGITAL JOURNEY
-   ========================================================= */
-
 .hero-journey {
   position: absolute;
-
   z-index: 20;
 
-  right: 7%;
+  right: -14%;
   top: 50%;
 
-  width: min(40vw, 520px);
+  width: min(58vw, 720px);
 
   transform: translateY(-50%);
 
   color: #fff0c8;
 }
 
+@media (max-width: 767px) {
+  .hero-journey {
+    right: 5%;
+    left: 5%;
+    top: auto;
+    bottom: 8%;
+
+    width: auto;
+
+    transform: none;
+
+    text-align: center;
+  }
+
+  .journey-kicker {
+    font-size: 0.7rem;
+  }
+
+  .hero-journey h1 {
+    font-size: 2rem;
+  }
+
+  .journey-intro {
+    font-size: 0.85rem;
+  }
+
+  .journey-path {
+    display: none;
+  }
+
+  .hero-open-book {
+    margin: 1rem auto 0;
+  }
+}
 
 /* Small title */
 .journey-kicker {
   margin-bottom: 15px;
-
   color: #e8bb70;
-
   font-size: 11px;
   font-weight: 900;
-
   letter-spacing: .3em;
 }
 
@@ -1043,16 +1107,23 @@ a {
 /* Divider */
 .journey-divider {
   display: flex;
-
   align-items: center;
-
   gap: 12px;
-
   width: 270px;
-
-  margin: 22px 0 18px;
-
   color: #d79a50;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .journey-divider {
+    width: min(270px, 80vw);
+    justify-content: center;
+  }
+
+  .hero-caption {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .journey-divider span {
@@ -1096,10 +1167,6 @@ a {
   line-height: 1.7;
 }
 
-
-/* =========================================================
-   JOURNEY PATH
-   ========================================================= */
 
 .journey-path {
   position: relative;
@@ -1184,11 +1251,6 @@ a {
 
   border-left: 2px dashed rgba(210, 157, 83, .55);
 }
-
-
-/* =========================================================
-   OPEN BOOK BUTTON
-   ========================================================= */
 
 .hero-open-book {
   display: inline-flex;
@@ -1369,16 +1431,19 @@ a {
 
 .hero-developer {
   position: absolute;
-
   z-index: 10;
-
   left: 4%;
   bottom: 0;
-
   width: min(58vw, 720px);
   height: 690px;
-
   pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .hero-developer {
+    width: min(50vw, 600px);
+  }
+
 }
 
 
@@ -1530,21 +1595,6 @@ a {
    RIGHT SIDE — DIGITAL JOURNEY
    ========================================================= */
 
-.hero-journey {
-  position: absolute;
-
-  z-index: 20;
-
-  right: 7%;
-  top: 50%;
-
-  width: min(40vw, 520px);
-
-  transform: translateY(-50%);
-
-  color: #fff0c8;
-}
-
 
 /* Small title */
 .journey-kicker {
@@ -1590,157 +1640,6 @@ a {
 
   font-size: .65em;
 }
-
-
-/* Divider */
-.journey-divider {
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  width: 270px;
-
-  margin: 22px 0 18px;
-
-  color: #d79a50;
-}
-
-.journey-divider span {
-  flex: 1;
-
-  height: 1px;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(225, 170, 92, .8)
-    );
-}
-
-.journey-divider span:last-child {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(225, 170, 92, .8),
-      transparent
-    );
-}
-
-.journey-divider b {
-  font-size: 21px;
-  font-weight: 400;
-}
-
-
-/* Intro */
-.journey-intro {
-  margin: 0 0 30px;
-
-  color: #ead9b5;
-
-  font-family: Georgia, serif;
-
-  font-size: 16px;
-
-  line-height: 1.7;
-}
-
-
-/* =========================================================
-   JOURNEY PATH
-   ========================================================= */
-
-.journey-path {
-  position: relative;
-
-  margin: 25px 0 30px;
-
-  padding-left: 10px;
-}
-
-
-.journey-step {
-  display: flex;
-
-  align-items: flex-start;
-
-  gap: 15px;
-
-  position: relative;
-}
-
-
-.journey-dot {
-  display: grid;
-
-  place-items: center;
-
-  flex: 0 0 38px;
-
-  width: 38px;
-  height: 38px;
-
-  border: 2px solid #d19a57;
-
-  border-radius: 50%;
-
-  background:
-    rgba(75, 48, 31, .65);
-
-  color: #f2c16f;
-
-  font-size: 10px;
-  font-weight: 900;
-
-  box-shadow:
-    0 0 0 5px rgba(218, 157, 82, .08);
-}
-
-
-.journey-step strong {
-  display: block;
-
-  margin-bottom: 2px;
-
-  color: #fff0c8;
-
-  font-family: Georgia, serif;
-
-  font-size: 20px;
-}
-
-
-.journey-step small {
-  display: block;
-
-  max-width: 300px;
-
-  color: #d8c8a8;
-
-  font-size: 12px;
-
-  line-height: 1.5;
-}
-
-
-/* little connecting trail */
-.journey-branch {
-  width: 2px;
-
-  height: 24px;
-
-  margin-left: 18px;
-
-  border-left: 2px dashed rgba(210, 157, 83, .55);
-}
-
-
-/* =========================================================
-   OPEN BOOK BUTTON
-   ========================================================= */
 
 .hero-open-book {
   display: inline-flex;
@@ -1822,11 +1721,6 @@ a {
 
   letter-spacing: .12em;
 }
-
-
-/* =========================================================
-   FOREST DECORATIONS
-   ========================================================= */
 
 .hero-stars {
   position: absolute;

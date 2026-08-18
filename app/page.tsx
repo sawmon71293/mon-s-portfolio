@@ -23,7 +23,7 @@ const chapters: { id: Chapter; number: string; label: string }[] = [
 
 const projects = [
   { title: "Loan Origination System", text: "A lending workflow for applications, approval rules, disbursement.", tags: [".NET", "React", "SQL Server"], image: "/svg/12_project_signposts.svg" },
-  { title: "HR Administration Portal", text: "An internal platform for employee administration, leave workflows and attendance", tags: ["Next.js", "TypeScript", "React"], image: "/svg/10_tech_shelf.svg" },
+  { title: "HR Portal", text: "An internal platform for employee administration, leave workflows and attendance", tags: ["Next.js", "TypeScript", "React", ".Net"], image: "/svg/10_tech_shelf.svg" },
   { title: "Financial Systems' Frontend Development", text: "Developed responsive frontend applications for financial systems, integrating complex business workflows with clean, maintainable user interfaces.", tags: ["React", "Vue", "NuxtJS"], image: "/svg/09_laptop.svg" },
 ];
 
@@ -72,11 +72,9 @@ function Hero({ onOpen }: { onOpen: () => void }) {
         className="hero-background"
       />
 
-      {/* Atmosphere */}
       <div className="hero-vignette" />
       <div className="hero-glow" />
 
-      {/* Stars */}
       <img
         src="/svg/18_stars_sparkles.svg"
         alt=""
@@ -89,14 +87,13 @@ function Hero({ onOpen }: { onOpen: () => void }) {
         className="hero-stars hero-stars-right"
       />
 
-      {/* Leaves */}
       <img
         src="/svg/06_leaf_scatter.svg"
         alt=""
-        className="hero-leaves"
+        className="hidden md:block hero-leaves"
       />
 
-      <div className="hero-developer">
+      <div className="hidden md:block hero-developer">
         <div className="developer-light" />
 
         <img
@@ -114,7 +111,7 @@ function Hero({ onOpen }: { onOpen: () => void }) {
         <img
           src="/svg/05_mushrooms.svg"
           alt=""
-          className="developer-mushrooms"
+          className="developer-mushrooms hidden md:block"
         />
 
         <div className="developer-fireflies">
