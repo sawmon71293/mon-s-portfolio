@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#06243A"/>
+    <stop offset=".55" stop-color="#0B3650"/>
+    <stop offset="1" stop-color="#41617A"/>
+  </linearGradient>
+  <radialGradient id="moonGlow">
+    <stop offset="0" stop-color="#FFE9A6" stop-opacity=".42"/>
+    <stop offset=".55" stop-color="#FFE9A6" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#FFE9A6" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="hill1" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#083D3D"/><stop offset="1" stop-color="#0B4A43"/>
+  </linearGradient>
+  <linearGradient id="hill2" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#184B45"/><stop offset="1" stop-color="#315C45"/>
+  </linearGradient>
+  <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+    <stop stop-color="#5A351F"/><stop offset="1" stop-color="#35251D"/>
+  </linearGradient>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="12"/>
+  </filter>
+</defs>
+
+<!-- Sky -->
+<rect width="1536" height="1024" fill="url(#sky)"/>
+
+<!-- Moon -->
+<circle cx="1225" cy="125" r="112" fill="url(#moonGlow)" filter="url(#soft)"/>
+<circle cx="1225" cy="125" r="55" fill="#FFD978"/>
+
+<!-- Clouds -->
+<g fill="#315674" opacity=".48">
+  <path d="M0 184 C55 145 110 160 142 178 C160 125 238 125 254 180 C300 175 330 196 350 210 L0 208Z"/>
+  <path d="M1260 245 C1320 215 1360 220 1385 242 C1395 190 1475 180 1498 235 C1530 228 1548 245 1560 258 L1260 270Z"/>
+  <path d="M220 352 C275 320 330 330 350 350 C365 300 440 285 466 344 C505 338 530 355 548 365 L220 370Z"/>
+  <path d="M1040 430 C1085 397 1145 404 1168 425 C1180 378 1250 376 1272 427 C1300 420 1320 435 1340 444 L1040 452Z"/>
+</g>
+
+<!-- Small stars only -->
+<g fill="#F7C95E">
+  <circle cx="42" cy="98" r="2"/><circle cx="168" cy="69" r="4"/><circle cx="365" cy="65" r="2"/>
+  <circle cx="564" cy="79" r="2"/><circle cx="845" cy="61" r="3"/><circle cx="1010" cy="86" r="2"/>
+  <circle cx="1394" cy="56" r="2"/><circle cx="1458" cy="98" r="2"/><circle cx="421" cy="139" r="3"/>
+  <circle cx="532" cy="211" r="2"/><circle cx="722" cy="205" r="2"/><circle cx="965" cy="201" r="2"/>
+  <circle cx="1385" cy="176" r="3"/><circle cx="280" cy="250" r="2"/><circle cx="1102" cy="253" r="2"/>
+</g>
+<g fill="#FFD36A">
+  <path d="M657 124 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+  <path d="M1060 206 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+  <path d="M437 250 l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+  <path d="M1255 344 l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/>
+</g>
+
+<!-- Distant hills -->
+<path d="M0 455 C170 430 320 470 475 555 C620 505 745 520 895 620 C1025 535 1140 520 1270 560 C1390 500 1470 480 1536 505 L1536 800 L0 800Z" fill="url(#hill1)"/>
+<path d="M0 575 C160 535 290 590 420 675 C560 580 720 555 885 660 C1030 560 1190 585 1310 655 C1410 585 1480 570 1536 600 L1536 850 L0 850Z" fill="url(#hill2)"/>
+<path d="M0 720 C190 645 330 700 500 780 C650 690 785 640 960 745 C1110 650 1260 650 1410 730 C1470 700 1510 690 1536 700 L1536 900 L0 900Z" fill="#3A6048"/>
+
+<!-- Tall trees -->
+<g fill="#4E6728">
+  <path d="M38 570 C45 445 55 315 72 240 C91 315 100 450 106 570Z"/>
+  <path d="M118 570 C126 470 135 355 150 300 C165 365 174 480 180 570Z"/>
+  <path d="M1360 610 C1368 490 1378 380 1392 318 C1408 395 1418 500 1424 610Z"/>
+  <path d="M1430 610 C1440 450 1452 330 1468 220 C1487 335 1494 475 1502 610Z"/>
+</g>
+
+<!-- Foreground ground -->
+<path d="M0 790 C170 755 305 805 465 840 C625 875 760 900 900 850 C1070 790 1210 825 1360 850 C1440 865 1500 850 1536 840 L1536 1024 L0 1024Z" fill="url(#ground)"/>
+
+<!-- Bush masses -->
+<g fill="#123F35">
+  <circle cx="45" cy="785" r="85"/><circle cx="125" cy="770" r="92"/><circle cx="205" cy="795" r="100"/>
+  <circle cx="290" cy="820" r="78"/><circle cx="360" cy="835" r="80"/>
+  <circle cx="1200" cy="820" r="85"/><circle cx="1290" cy="785" r="95"/><circle cx="1380" cy="800" r="105"/><circle cx="1480" cy="790" r="85"/>
+</g>
+<g fill="#28523A" opacity=".9">
+  <circle cx="80" cy="805" r="58"/><circle cx="160" cy="810" r="62"/><circle cx="245" cy="825" r="55"/>
+  <circle cx="1270" cy="825" r="65"/><circle cx="1360" cy="820" r="60"/><circle cx="1460" cy="820" r="58"/>
+</g>
+
+<!-- Leafy plants -->
+<g fill="#668F38">
+  <path d="M75 950 C70 875 92 825 115 785 C110 850 100 900 75 950Z"/>
+  <path d="M105 930 C115 860 145 820 170 800 C150 865 130 905 105 930Z"/>
+  <path d="M235 960 C230 895 250 850 275 815 C270 880 255 925 235 960Z"/>
+  <path d="M1310 960 C1310 885 1340 840 1370 810 C1355 890 1335 930 1310 960Z"/>
+  <path d="M1410 950 C1430 880 1460 845 1490 830 C1470 900 1445 935 1410 950Z"/>
+</g>
+
+<!-- Flowers -->
+<g fill="#F5D37A">
+  <g transform="translate(126 870)"><circle r="10"/><circle cx="15" r="7"/><circle cx="-15" r="7"/><circle cy="15" r="7"/><circle cy="-15" r="7"/><circle r="5" fill="#C17A32"/></g>
+  <g transform="translate(270 735)"><circle r="9"/><circle cx="14" r="6"/><circle cx="-14" r="6"/><circle cy="14" r="6"/><circle cy="-14" r="6"/><circle r="4" fill="#C17A32"/></g>
+  <g transform="translate(370 790)"><circle r="8"/><circle cx="12" r="6"/><circle cx="-12" r="6"/><circle cy="12" r="6"/><circle cy="-12" r="6"/><circle r="4" fill="#C17A32"/></g>
+  <g transform="translate(1280 785)"><circle r="9"/><circle cx="14" r="6"/><circle cx="-14" r="6"/><circle cy="14" r="6"/><circle cy="-14" r="6"/><circle r="4" fill="#C17A32"/></g>
+  <g transform="translate(1390 750)"><circle r="8"/><circle cx="12" r="6"/><circle cx="-12" r="6"/><circle cy="12" r="6"/><circle cy="-12" r="6"/><circle r="4" fill="#C17A32"/></g>
+</g>
+
+<!-- Subtle ground texture -->
+<g fill="#8B5A2B" opacity=".45">
+  <ellipse cx="160" cy="965" rx="28" ry="7"/><ellipse cx="320" cy="930" rx="20" ry="6"/>
+  <ellipse cx="520" cy="970" rx="32" ry="7"/><ellipse cx="740" cy="930" rx="24" ry="6"/>
+  <ellipse cx="940" cy="980" rx="30" ry="7"/><ellipse cx="1120" cy="920" rx="22" ry="6"/>
+  <ellipse cx="1310" cy="970" rx="30" ry="7"/><ellipse cx="1470" cy="920" rx="20" ry="6"/>
+</g>
+</svg>

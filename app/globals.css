@@ -713,40 +713,6 @@ a {
   transform: rotate(2deg)
 }
 
-.decor-mushrooms {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  bottom: 30px;
-  width: 250px
-}
-
-.decor-leaves {
-  position: absolute;
-  z-index: 2;
-  right: -40px;
-  top: 100px;
-  width: 360px;
-  opacity: .45
-}
-
-.decor-stars {
-  position: absolute;
-  z-index: 2;
-  left: 8%;
-  top: 80px;
-  width: 250px;
-  opacity: .6
-}
-
-.decor-lamp {
-  position: absolute;
-  z-index: 2;
-  right: 3%;
-  bottom: 20px;
-  width: 250px;
-  opacity: .75
-}
 
 @media(max-width:1000px) {
   .book {
@@ -772,7 +738,7 @@ a {
 .hero {
   position: relative;
   min-height: 100vh;
-  min-height: 780px;
+  min-height: 859px;
   overflow: hidden;
   isolation: isolate;
 
@@ -796,10 +762,9 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
+  object-position: center bottom;
   z-index: 0;
 }
-
 
 /* ---------------------------------------------------------
    DARK EDGES
@@ -941,6 +906,12 @@ a {
   width: 220px;
   z-index: 13;
   opacity: .9;
+}
+
+@media(min-width: 760px) {
+  .developer-mushrooms {
+    bottom: -40px;
+  }
 }
 
 
@@ -1118,6 +1089,9 @@ a {
   .journey-divider {
     width: min(270px, 80vw);
     justify-content: center;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   .hero-caption {
@@ -1504,21 +1478,6 @@ a {
 
   animation:
     companionFloat 5s ease-in-out infinite;
-}
-
-
-/* Mushrooms in foreground */
-.developer-mushrooms {
-  position: absolute;
-
-  left: -20px;
-  bottom: 0;
-
-  width: 220px;
-
-  z-index: 13;
-
-  opacity: .9;
 }
 
 

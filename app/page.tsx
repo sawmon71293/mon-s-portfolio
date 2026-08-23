@@ -42,7 +42,6 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-[#123544] text-[#4d2e20]">
       <Hero onOpen={() => navigate("about")} />
       <section id="storybook" className="storybook-stage">
-        <BackgroundDecor />
         <div className="book-wrap">
           <div className="book">
             <div className="book-page left-page">
@@ -67,31 +66,13 @@ function Hero({ onOpen }: { onOpen: () => void }) {
   return (
     <section className="hero">
       <img
-        src="/svg/01_forest_night_background.svg"
+        src="/svg/moonlit_bg.png"
         alt=""
         className="hero-background"
       />
 
       <div className="hero-vignette" />
       <div className="hero-glow" />
-
-      <img
-        src="/svg/18_stars_sparkles.svg"
-        alt=""
-        className="hero-stars hero-stars-left"
-      />
-
-      <img
-        src="/svg/18_stars_sparkles.svg"
-        alt=""
-        className="hero-stars hero-stars-right"
-      />
-
-      <img
-        src="/svg/06_leaf_scatter.svg"
-        alt=""
-        className="hidden md:block hero-leaves"
-      />
 
       <div className="hidden md:block hero-developer">
         <div className="developer-light" />
@@ -394,13 +375,4 @@ function nextChapter(current: Chapter): Chapter {
 function previousChapter(current: Chapter): Chapter {
   const index = chapters.findIndex(item => item.id === current);
   return chapters[(index - 1 + chapters.length) % chapters.length].id;
-}
-
-function BackgroundDecor() {
-  return <>
-    <img src="/svg/05_mushrooms.svg" alt="" className="decor-mushrooms" />
-    <img src="/svg/06_leaf_scatter.svg" alt="" className="decor-leaves" />
-    <img src="/svg/18_stars_sparkles.svg" alt="" className="decor-stars" />
-    <img src="/svg/15_coffee_lamp.svg" alt="" className="decor-lamp" />
-  </>;
 }
