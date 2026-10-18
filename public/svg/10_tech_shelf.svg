@@ -1,19 +1,51 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
-<defs></defs>
+<defs>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="3" stdDeviation="2" flood-opacity=".18"/>
+  </filter>
+</defs>
 
-<g stroke="#61351f" stroke-width="7">
- <rect x="35" y="300" width="730" height="34" rx="8" fill="#8d5129"/>
- <rect x="55" y="335" width="25" height="200" fill="#70401f"/>
- <rect x="720" y="335" width="25" height="200" fill="#70401f"/>
- <rect x="80" y="220" width="130" height="80" rx="14" fill="#6e5678"/>
- <rect x="230" y="220" width="130" height="80" rx="14" fill="#6f6680"/>
- <rect x="380" y="220" width="130" height="80" rx="14" fill="#5d8b9b"/>
- <rect x="530" y="220" width="130" height="80" rx="14" fill="#8a9c4d"/>
+<!-- wooden shelf -->
+<g stroke="#61351f" stroke-width="7" stroke-linejoin="round">
+  <rect x="35" y="300" width="730" height="34" rx="8" fill="#8d5129"/>
+  <rect x="55" y="335" width="25" height="200" fill="#70401f"/>
+  <rect x="720" y="335" width="25" height="200" fill="#70401f"/>
 </g>
-<g font-family="Arial" font-weight="bold" fill="#fff" text-anchor="middle">
- <text x="145" y="270" font-size="34">C#</text><text x="295" y="268" font-size="25">.NET</text>
- <text x="445" y="270" font-size="34">TS</text><text x="595" y="268" font-size="25">SQL</text>
-</g>
-<g fill="#a86132"><rect x="100" y="120" width="38" height="100"/><rect x="145" y="140" width="38" height="80"/><rect x="190" y="105" width="38" height="115"/></g>
 
+<!-- tech cards: 5 per row -->
+<g stroke="#61351f" stroke-width="6" filter="url(#shadow)">
+  <rect x="48"  y="195" width="130" height="105" rx="14" fill="#6e5678"/>
+  <rect x="193" y="195" width="130" height="105" rx="14" fill="#6f6680"/>
+  <rect x="338" y="195" width="130" height="105" rx="14" fill="#5d8b9b"/>
+  <rect x="483" y="195" width="130" height="105" rx="14" fill="#8a9c4d"/>
+  <rect x="628" y="195" width="130" height="105" rx="14" fill="#a86132"/>
+
+  <rect x="48"  y="75" width="130" height="105" rx="14" fill="#7b5d87"/>
+  <rect x="193" y="75" width="130" height="105" rx="14" fill="#557f8c"/>
+  <rect x="338" y="75" width="130" height="105" rx="14" fill="#748c52"/>
+  <rect x="483" y="75" width="130" height="105" rx="14" fill="#9a7049"/>
+  <rect x="628" y="75" width="130" height="105" rx="14" fill="#65758d"/>
+</g>
+
+<!-- technology labels -->
+<g font-family="Arial, sans-serif" font-weight="bold" fill="#fff" text-anchor="middle" dominant-baseline="middle">
+  <text x="113" y="247" font-size="32">C#</text>
+  <text x="258" y="247" font-size="28">.NET</text>
+  <text x="403" y="247" font-size="28">NodeJS</text>
+  <text x="548" y="247" font-size="25">Fastify</text>
+  <text x="693" y="247" font-size="30">React</text>
+
+  <text x="113" y="127" font-size="28">VueJS</text>
+  <text x="258" y="127" font-size="32">TS</text>
+  <text x="403" y="127" font-size="30">SQL</text>
+  <text x="548" y="127" font-size="30">Git</text>
+  <text x="693" y="127" font-size="27">NextJS</text>
+</g>
+
+<!-- small decorative books / objects -->
+<g fill="#a86132">
+  <rect x="105" y="355" width="38" height="100" rx="3"/>
+  <rect x="150" y="375" width="38" height="80" rx="3"/>
+  <rect x="195" y="340" width="38" height="115" rx="3"/>
+</g>
 </svg>

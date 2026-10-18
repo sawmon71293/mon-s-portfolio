@@ -22,9 +22,11 @@ const chapters: { id: Chapter; number: string; label: string }[] = [
 ];
 
 const projects = [
-  { title: "Loan Origination System", text: "A lending workflow for applications, approval rules, disbursement.", tags: [".NET", "React", "SQL Server"], image: "/svg/12_project_signposts.svg" },
-  { title: "HR Portal", text: "An internal platform for employee administration, leave workflows and attendance", tags: ["Next.js", "TypeScript", "React", ".Net"], image: "/svg/10_tech_shelf.svg" },
+  { title: "Loan Origination System", text: "A lending workflow for applications, approval rules, disbursement.", tags: [".NET", "Next.js","TypeScript", "SQL Server"], image: "/svg/12_project_signposts.svg" },
+  { title: "HR Portal", text: "An internal platform for employee administration, leave workflows and attendance", tags: [".NET", "Next.js", "TypeScript", "GCP"], image: "/svg/10_tech_shelf.svg" },
   { title: "Financial Systems' Frontend Development", text: "Developed responsive frontend applications for financial systems, integrating complex business workflows with clean, maintainable user interfaces.", tags: ["React", "Vue", "NuxtJS"], image: "/svg/09_laptop.svg" },
+  { title: "Digital Recruitment Solution", text: "A digital platform that transforms traditional paper-based recruitment workflows into an efficient online process for job agencies, enabling agencies to manage candidates, job applications, documents, and recruitment activities in one centralized system.", tags: [".Net", "ASP.NET MVC", "JQuery", "JavaScript", "HTML", "CSS", "SQL Server"], image: "/svg/09_laptop.svg" },
+  { title: "E-Commerce Platform", text: "A full-stack e-commerce system built to manage online product sales, including product management, customer accounts, shopping cart, orders, and checkout workflows.", tags: ["Node.js", "Fastify", "Vue.js", "Nuxt.js", "Postgresql"], image: "/svg/09_laptop.svg" },
 ];
 
 const skills = ["C#", ".NET", "ASP.NET Core", "TypeScript", "React", "Next.js", "VueJS", "NuxtJS", "SQL Server", "PostgreSQL", "REST APIs", "Git", "Docker", "Linux"];
@@ -224,7 +226,7 @@ function AboutPage({ navigate }: { navigate: (c: Chapter) => void }) {
       <MiniBadge icon={<Sparkles />} text="Vue" />
       <MiniBadge icon={<Server />} text="NuxtJS" />
       <MiniBadge icon={<Database />} text="SQL" />
-      <MiniBadge icon={<Database />} text="MongoDB" />
+      <MiniBadge icon={<Database />} text="POSTGRESQL" />
     </div>
     <button className="wood-button small" onClick={() => navigate("projects")}>Explore my projects →</button>
   </div>;
@@ -244,8 +246,9 @@ function ProjectsIntro({ navigate }: { navigate: (c: Chapter) => void }) {
     <p className="lead">Here are some of the systems I&apos;ve worked on.</p>
     <p>I especially enjoy projects where business rules, APIs, databases and real-world workflows all have to work together.</p>
     <div className="wooden-sign-list">
-      <div>Loan Origination System</div>
       <div>HR Portal</div>
+      <div>Loan Origination System</div>
+      <div>Ecomerce System</div>
       <div>Frontend Development for Financial Systems</div>
       <div>Digital Recruitment Solution</div>
     </div>
@@ -293,16 +296,21 @@ function JourneyIntro({ navigate }: { navigate: (c: Chapter) => void }) {
     <Ribbon>CHAPTER 04</Ribbon><h2>My Journey</h2>
     <p className="lead">A path of learning, building and growing.</p>
     <p>Every project adds another little chapter — from writing my first programs to building systems used in real financial workflows.</p>
-    <div className="journey-milestones"><span>Started Coding</span><span>Financial Systems Frontend Development</span><span>Loan Origination System</span><span>HR Portal</span></div>
+    <div className="journey-milestones">
+      <span>Started Coding</span>
+      <span>Digital Recruitment Solution</span>
+      <span>Ecomerce System</span>
+      <span>Financial Systems Frontend Development</span>
+      <span>Loan Origination System</span>
+      <span>HR Portal</span>
+    </div>
     <button className="wood-button small" onClick={() => navigate("contact")}>Let&apos;s build together →</button>
   </div>;
 }
 
 function JourneyPage() {
   return <div className="journey-page">
-    <img src="/svg/11_journey_path.svg" alt="Illustrated career journey path" className="journey-map" />
-    <img src="/svg/07_pink_character.svg" alt="" className="journey-character" />
-    <img src="/svg/04_green_companion.svg" alt="" className="journey-companion" />
+    <img src="/svg/journey-page.png" alt="Illustrated career journey path" className="journey-map" />
   </div>;
 }
 

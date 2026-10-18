@@ -204,7 +204,7 @@ a {
   padding: 58px 65px 70px 70px;
 }
 
-@media (min-width:400px) {
+@media (min-width:300px) {
   .right-page {
     padding: 20px
   }
@@ -466,14 +466,7 @@ a {
   font-family: Georgia, serif;
   font-weight: 800;
   box-shadow: 0 4px 0 #63341d;
-}
-
-.wooden-sign-list div:nth-child(2) {
-  margin-left: 8%
-}
-
-.wooden-sign-list div:nth-child(3) {
-  margin-left: 3%
+  text-align: center;
 }
 
 .problem-solution {
@@ -481,6 +474,10 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 18px;
   margin-bottom: 18px;
+
+  @media(min-width: 300px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .problem-solution>div {
@@ -521,7 +518,9 @@ a {
   padding: 14px;
   border: 2px solid #967047;
   border-radius: 15px;
-  background: rgba(235, 205, 149, .68)
+  background: rgba(235, 205, 149, .68);
+
+  
 }
 
 .project-card h3 {
@@ -617,7 +616,7 @@ a {
 }
 
 .journey-milestones span:nth-child(2) {
-  background: #a6ad59
+  background: #ad7077
 }
 
 .journey-milestones span:nth-child(3) {
@@ -628,11 +627,25 @@ a {
   background: #9a718a
 }
 
+.journey-milestones span:nth-child(5) {
+  background: #bc1a48
+}
+
 .journey-map {
   position: absolute;
-  left: -40px;
+  left: -10px;
   top: 100px;
   width: 125%
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .journey-map {
+    width: 180%;
+    max-width: none;
+    left: -40%;
+    top: 60px;
+  }
 }
 
 .journey-character {
